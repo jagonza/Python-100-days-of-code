@@ -8,7 +8,7 @@ load_dotenv()
 
 def add_exercise(sport_name, duration, calories):
     headers = {
-        "Authorization": "Bearer mklmsfkjowi94u90543uitlkgf2u9384"
+        "Authorization": f"Bearer {os.getenv('SHEETY_TOKEN')}"
     }
 
     params = {
